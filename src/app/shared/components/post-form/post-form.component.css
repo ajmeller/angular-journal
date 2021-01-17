@@ -1,0 +1,29 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.post-title,
+.post-thought {
+  margin: 10px 0px;
+}
+
+.post-thought {
+  height: 120px;
+  font-family: "Open Sans", sans-serif;
+}
+
+button.submit-post {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 10px;
+}
+
+/* .post-form-container,
+.post-title,
+.post-thought,
+button {
+  border: 1px solid black;
+  border-radius: 4px;
+} */

@@ -1,0 +1,31 @@
+div.post-container {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #267453;
+  position: relative;
+}
+
+h2.post-title {
+  margin: 5px 0px;
+}
+
+p.post-thought {
+  margin: 5px 80px 5px 0px;
+}
+
+div.edit-actions {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 1%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+span.edit:hover,
+span.delete:hover {
+  color: black;
+}
+
+span.edit {
+  margin-right: 5px;
+}

@@ -1,0 +1,10 @@
+<div class="post-container">
+  <h2 class="post-title">{{ post.title }}</h2>
+  <p class="post-thought">{{ post.thought }}</p>
+  <div class="edit-actions">
+    <span class="edit" (click)="editPost()"><mat-icon>edit</mat-icon></span>
+    <span class="delete" (click)="deletePost()"
+      ><mat-icon>delete</mat-icon></span
+    >
+  </div>
+</div>

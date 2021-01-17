@@ -1,0 +1,29 @@
+<div class="post-form" mat-dialog-content>
+  <mat-form-field>
+    <mat-label for="postTitle">Title</mat-label>
+    <input
+      type="text"
+      id="postTitle"
+      name="title"
+      class="post-title"
+      [(ngModel)]="data.title"
+      matInput
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label for="postThought">Thought</mat-label>
+    <textarea
+      id="postThought"
+      name="thought"
+      class="post-thought"
+      [(ngModel)]="data.thought"
+      matInput
+    ></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-stroked-button class="submit-post" (click)="submitPost()">
+    {{ addEdit }} Post
+  </button>
+  <!-- <button class="add-post" [mat-dialog-close]="data">Add Post</button> -->
+</div>

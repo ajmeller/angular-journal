@@ -1,0 +1,19 @@
+<div class="social-posts-container">
+  <div class="social-posts-flex">
+    <h1 class="header">My Thoughts</h1>
+    <button mat-flat-button class="new-thought" (click)="openPostForm(true)">
+      New Thought
+    </button>
+    <div class="posts-container">
+      <ul class="posts-list">
+        <li *ngFor="let post of posts; let i = index">
+          <post
+            [post]="post"
+            (deleted)="onDelete(i)"
+            (edited)="onEdit(post, i)"
+          ></post>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
