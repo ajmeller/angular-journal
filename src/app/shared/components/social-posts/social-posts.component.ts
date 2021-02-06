@@ -9,15 +9,16 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ['./social-posts.component.css'],
 })
 export class SocialPostsComponent implements OnInit {
-  posts: Post[] = [];
+  constructor(public dialog: MatDialog) {}
 
-  addEdit: string = '';
+  posts: Post[] = [];
 
   openPostForm(newPost: boolean, post?: Post, i?: number) {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.width = '50%';
-    dialogConfig.position = { top: '9%' };
+    dialogConfig.height = '60%';
+    dialogConfig.position = { top: '5%' };
 
     if (newPost) {
       dialogConfig.data = { title: '', thought: '' };
@@ -31,7 +32,7 @@ export class SocialPostsComponent implements OnInit {
       if (data.title != '' && data.thought != '') {
         if (newPost) {
           this.posts.unshift(data);
-        } else if (i) {
+        } else if (i != undefined) {
           this.posts[i].title = data.title;
           this.posts[i].thought = data.thought;
         }
@@ -46,8 +47,6 @@ export class SocialPostsComponent implements OnInit {
   onEdit = (post: Post, i: number) => {
     this.openPostForm(false, post, i);
   };
-
-  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.posts = [

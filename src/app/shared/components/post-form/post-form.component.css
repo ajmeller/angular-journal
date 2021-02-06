@@ -1,29 +1,50 @@
-.post-form {
+.post-form,
+.post-form-fields {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: space-around;
+}
+
+.post-form {
+  height: 100%;
+}
+
+.post-form-fields {
+  height: 80%;
+}
+
+.submit-btn {
+  align-self: center;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field.title {
+  margin-bottom: 10px;
 }
 
 .post-title,
-.post-thought {
-  margin: 10px 0px;
+.post-thought,
+mat-label,
+mat-error {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
 }
 
 .post-thought {
-  height: 120px;
-  font-family: "Open Sans", sans-serif;
+  height: 150px;
+}
+
+button.submit-post:disabled {
+  background-color: white;
 }
 
 button.submit-post {
-  width: 100%;
   margin: 5px 0px;
-  padding: 10px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #73a5f1;
 }
-
-/* .post-form-container,
-.post-title,
-.post-thought,
-button {
-  border: 1px solid black;
-  border-radius: 4px;
-} */

@@ -5,43 +5,40 @@ div.social-posts-flex {
   align-items: center;
 }
 
-div.social-posts-container {
-  width: 100%;
-}
-
 div.social-posts-flex {
-  position: relative;
   width: 60%;
-}
-
-h1 {
-  margin: 30px 0px 20px 0px;
-  color: white;
-  font-family: "Fraunces";
-  font-size: 24pt;
 }
 
 button.new-thought,
 div.posts-container {
-  background-color: rgb(255, 255, 255, 0.1);
-  border: 3px solid rgb(255, 255, 255, 0.5);
-  border-radius: 15px;
-  width: 100%;
+  background-color: #a4afd0;
+  border-radius: 5px;
 }
 
 button.new-thought {
   padding: 10px 0px;
   outline: none;
+  width: 40%;
   font-size: 18px;
 }
 
+button.new-thought:hover {
+  background-color: #73a5f1;
+}
+
 div.posts-container {
-  display: block;
-  margin: 10px 0px;
+  margin: 20px 0px;
+  width: 100%;
 }
 
 ul.posts-list {
   list-style: none;
   padding: 0px;
-  margin: 15px 55px;
+  margin: 20px 55px;
+}
+
+div.no-posts {
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
 }

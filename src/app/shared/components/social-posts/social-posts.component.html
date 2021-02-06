@@ -1,6 +1,5 @@
 <div class="social-posts-container">
   <div class="social-posts-flex">
-    <h1 class="header">My Thoughts</h1>
     <button mat-flat-button class="new-thought" (click)="openPostForm(true)">
       New Thought
     </button>
@@ -14,6 +13,7 @@
           ></post>
         </li>
       </ul>
+      <div *ngIf="this.posts.length === 0" class="no-posts">No posts yet!</div>
     </div>
   </div>
 </div>
