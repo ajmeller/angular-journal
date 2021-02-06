@@ -122,6 +122,14 @@
               "devServerTarget": "social-posts:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/social-posts",
+            "netlifyToken": "lUN5p2rPMw_LSu1pB_uppud4xhBI-zewF_SRVxkZShY",
+            "siteId": "ba581599-922d-4305-859e-aac139961705"
+          }
         }
       }
     }
