@@ -17,7 +17,6 @@ export class SocialPostsComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.width = '50%';
-    dialogConfig.height = '60%';
     dialogConfig.position = { top: '5%' };
 
     if (newPost) {
